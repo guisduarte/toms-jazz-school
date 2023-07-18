@@ -1,0 +1,18 @@
+html{
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient( #FFE7D1,#FFF2E5);
+}
+
+main {
+  border-left: 1px solid black; 
+  border-top: 1px solid black;   
+  margin: 0 25px;
+}
+
+/* Variáveis */
+
+:root {
+  --preto: #000000;
+  --laranja-principal: #ED4D1B;
+  --laranja-secundaria: #FF9A3C;
+}

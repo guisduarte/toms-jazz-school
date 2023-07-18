@@ -1,0 +1,52 @@
+.secao-principal {
+  display: flex;
+  height: 100vh;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.secao-principal .caixa-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 88px;
+  margin-left: 90px;
+}
+.secao-principal .caixa-texto h1 {
+  width: 464px;
+  font-size: 64px;
+  font-weight: 900;
+}
+.secao-principal .caixa-texto h1 span {
+  color: var(--laranja-principal);
+}
+.secao-principal .caixa-texto h1 span img {
+  margin-bottom: 20px;
+  margin-left: -20px;
+  position: relative;
+}
+.secao-principal .caixa-texto p {
+  width: 368px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.secao-principal .caixa-texto button {
+  width: 225px;
+  height: 48px;
+  background-color: var(--laranja-principal);
+  font-size: 20px;
+  font-weight: 500;
+}
+.secao-principal .caixa-texto #img-curva-esquerda {
+  position: relative;
+  width: 97.5px;
+  height: 105.5px;
+  left: 170px;
+  bottom: 40px;
+}
+.secao-principal .caixa-imagem {
+  width: 842px;
+  height: 561px;
+  background-image: url(../../Assets/imagem-banda.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}

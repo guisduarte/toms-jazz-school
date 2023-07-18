@@ -1,0 +1,31 @@
+header {
+  height: 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 25px;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+header span {
+  margin-left: 5.625rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+header ul {
+  display: flex;
+  gap: 3.75rem;
+}
+header ul li {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+header button {
+  width: 200px;
+  height: 48px;
+  margin-right: 5.875rem;
+  border: 2px solid var(--preto);
+  font-size: 1.25rem;
+  font-weight: 500;
+  background: var(--laranja-principal);
+}
