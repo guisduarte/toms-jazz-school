@@ -3,7 +3,7 @@ html{
   background: linear-gradient( #FFE7D1,#FFF2E5);
 }
 
-main {
+main, footer {
   border-left: 1px solid black; 
   border-top: 1px solid black;   
   margin: 0 25px;
