@@ -13,6 +13,10 @@ header {
     font-weight: 900;
   }
 
+  #nome-mobile {
+    display: none;
+  }
+
   ul {
     display: flex;
     gap: 3.75rem;
@@ -30,5 +34,43 @@ header {
     font-size: 1.25rem;
     font-weight: 500;
     background: var(--laranja-principal);
+  }
+}
+
+@media (max-width:425px) {
+  header {
+    height: 16.5rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.3125rem;
+    span {
+      margin-left: 0;
+      font-size: 2rem;
+      font-weight: 900;
+      margin-top: 2rem;
+
+      #nome-mobile {
+        display: block;
+        font-size: 1rem;
+        font-weight: 900;
+      }
+    }    
+    
+    ul {
+      display: grid;      
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 1rem;
+      
+      li{
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+    }
+  
+    button {
+      margin-right: 0;
+      
+    }
   }
 }

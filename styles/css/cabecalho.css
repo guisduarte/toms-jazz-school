@@ -12,6 +12,9 @@ header span {
   font-size: 2.5rem;
   font-weight: 900;
 }
+header #nome-mobile {
+  display: none;
+}
 header ul {
   display: flex;
   gap: 3.75rem;
@@ -28,4 +31,37 @@ header button {
   font-size: 1.25rem;
   font-weight: 500;
   background: var(--laranja-principal);
+}
+
+@media (max-width: 425px) {
+  header {
+    height: 16.5rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.3125rem;
+  }
+  header span {
+    margin-left: 0;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 2rem;
+  }
+  header span #nome-mobile {
+    display: block;
+    font-size: 1rem;
+    font-weight: 900;
+  }
+  header ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+  }
+  header ul li {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  header button {
+    margin-right: 0;
+  }
 }
