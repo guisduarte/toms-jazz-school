@@ -35,6 +35,8 @@
   background-color: var(--laranja-principal);
   font-size: 20px;
   font-weight: 500;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 0px 0px #1E1E1E;
 }
 .secao-principal .caixa-texto #img-curva-esquerda {
   position: relative;
@@ -49,4 +51,53 @@
   background-image: url(../../Assets/imagem-banda.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 425px) {
+  .secao-principal {
+    flex-wrap: wrap;
+  }
+  .secao-principal .caixa-texto {
+    order: 2;
+    width: 328px;
+    height: 478px;
+    margin: 25px 24px 0 24px;
+  }
+  .secao-principal .caixa-texto h1 {
+    width: 280px;
+    font-size: 48px;
+    font-weight: 900;
+  }
+  .secao-principal .caixa-texto h1 span {
+    color: var(--laranja-principal);
+  }
+  .secao-principal .caixa-texto h1 span img {
+    margin: 0px -22px 6px -14px;
+    position: relative;
+  }
+  .secao-principal .caixa-texto p {
+    width: 280px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .secao-principal .caixa-texto button {
+    width: 200px;
+    background-color: var(--laranja-principal);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .secao-principal .caixa-texto #img-curva-esquerda {
+    position: relative;
+    width: 97.5px;
+    height: 105.5px;
+    left: 170px;
+    bottom: 40px;
+  }
+  .secao-principal .caixa-imagem {
+    width: 425px;
+    height: 253px;
+    background-image: url(../../Assets/imagem-banda-mobile.png);
+    background-size: cover;
+    order: 1;
+  }
 }

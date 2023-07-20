@@ -37,6 +37,8 @@
       background-color: var(--laranja-principal);
       font-size: 20px;
       font-weight: 500;
+      border: 2px solid #000;
+      box-shadow: 4px 4px 0px 0px #1E1E1E;
     }
 
     #img-curva-esquerda {
@@ -56,4 +58,64 @@
     background-repeat: no-repeat;
   }
   
+}
+
+@media (max-width: 425px) {
+  .secao-principal{  
+    flex-wrap: wrap;
+
+    .caixa-texto {
+      order: 2;
+      width: 328px;      
+      height: 478px;
+      margin: 25px 24px 0 24px;    
+
+      h1 {
+        width: 280px;
+        font-size: 48px;
+        font-weight: 900;
+      
+        span {
+          color: var(--laranja-principal);    
+        
+          img {
+            margin: 0px -22px 6px -14px;            
+            position: relative;
+          }
+        }
+      }
+  
+      p {
+        width: 280px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+  
+      button {
+        width: 200px;
+        background-color: var(--laranja-principal);
+        font-size: 20px;
+        font-weight: 500;
+      }
+  
+      #img-curva-esquerda {
+        position: relative;
+        width: 97.5px;
+        height: 105.5px;
+        left: 170px;
+        bottom: 40px;
+      }
+
+    }
+  
+    .caixa-imagem{      
+      width: 425px;
+      height: 253px;      
+      background-image: url(../../Assets/imagem-banda-mobile.png);    
+      background-size: cover;
+      order: 1;
+      
+    }
+    
+  }
 }
