@@ -6,7 +6,7 @@ html{
 main, footer {
   border-left: 1px solid black; 
   border-top: 1px solid black;   
-  margin: 0 25px;
+  margin: 0 25px;  
 }
 
 /* Variáveis */
@@ -15,4 +15,10 @@ main, footer {
   --preto: #000000;
   --laranja-principal: #ED4D1B;
   --laranja-secundaria: #FF9A3C;
+}
+
+@media (max-width: 425px) {
+  main, header, footer {
+    width: 328px;
+  }
 }
